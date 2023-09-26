@@ -1,4 +1,48 @@
-p{
-   color: aqua;
-   font-size: 1.5em;
+
+.wrap {
+   margin: 0 auto;
+   width: 600px;
+   height: 600px;
+   overflow: hidden;
+}
+.box{
+   width: calc(600px * 7);
+   animation: swiper 35s linear infinite;
+}
+img{
+   float: left;
+   width: 600px;
+   height: 600px;
+}
+@keyframes swiper {
+   0% {
+      transform: translateX(0);
+   }
+   12.5% {
+      transform: translateX(-600px);
+   }
+   25% {
+      transform: translateX(-1200px);
+   }
+   37.5% {
+      transform: translateX(-1800px);
+   }
+   50% {
+      transform: translateX(-2400px);
+   }
+   62.5% {
+      transform: translateX(-3000px);
+   }
+   75% {
+      transform: translateX(-3600px);
+   }
+   87.5% {
+      transform: translateX(-4200px);
+   }
+   100%{
+      transform: translateX(0);
+   }
+}
+body{
+   color: aliceblue;
 }
