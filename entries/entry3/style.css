@@ -7,16 +7,75 @@ body{
 .box{
     max-width: 100%;
     height: 100%;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    padding: auto;
+    padding: auto; */
 }
 .image{
     max-width: 10%;
     padding: 0 10px;
-    position: absolute;
 }
-.image img{
-    width: 250%;
-    height: 100%;
-} 
+
+.image-elephant {
+    /* max-width: 10%; */
+    padding: 0 10px;
+    position: absolute;
+    top: 100px; 
+    height: 50%; 
+    width: 200px; 
+    left: 100px;
+}
+
+.image-speaker {
+    padding: 0 10px;
+    position: absolute;
+    top: 400px; 
+    left: 1300px;
+}
+
+.image-headphone {
+    padding: 0 10px;
+    position: absolute;
+    top: 100px; 
+    left: 200px;
+}
+
+.image-card {
+    padding: 0 10px;
+    position: absolute;
+    top: 400px; 
+    left: 600px;
+}
+
+.image-hat {
+    padding: 0 10px;
+    position: absolute;
+    top: 450px;
+    left: 700px;
+}
+
+.image-camera {
+    padding: 0 10px;
+    position: absolute;
+    top: 600px; 
+    left: 1400px;
+}
+
+.image-crayon {
+    padding: 0 10px;
+    position: absolute;
+    top: 700px;
+    left: 900px;
+}
+
+.image-pot {
+    padding: 0 10px;
+    position: absolute;
+    top: 700px;
+}
+
+.image-plant {
+    padding: 0 10px;
+    position: absolute;
+    top: 250px; left: 450px;
+}
