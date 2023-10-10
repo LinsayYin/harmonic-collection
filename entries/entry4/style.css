@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7B9F7C;
+    color: #ECE9D2;
+
+}
+h1{
+    font-size: 128px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.meme{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    gap: 160px;
+}
+
+.a{
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+.a:hover img{ 
+    transform: scale(1.5);
+}
+
+.mimi{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    gap: 160px;
+}
+.b{
+    width: 200px;
+    aspect-ratio: 1/1;
+}
+.b:hover img{ 
+    transform: scale(1.5);
+}
