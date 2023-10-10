@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+    font-family: RammettoOne;
+    src: url("RammettoOne-Regular.ttf");
+}
 body{
     background-color: #7B9F7C;
     color: #ECE9D2;
@@ -10,7 +13,7 @@ body{
 }
 h1{
     font-size: 128px;
-    font-family: sans-serif;
+    font-family: RammettoOne;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
