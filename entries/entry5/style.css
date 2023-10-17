@@ -38,6 +38,7 @@ h1{
     left: 575px;
     letter-spacing: 20px;
     opacity: 0;
+    transition-duration: 3s;
     z-index: 2;
 }
 .type:hover{
