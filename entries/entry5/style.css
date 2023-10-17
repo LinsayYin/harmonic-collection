@@ -5,11 +5,6 @@
 
 body{
     overflow-x: hidden;  
-    
-}
-
-.collage{
-    position: relative;
 }
 .collage div{
     position: absolute;
@@ -43,7 +38,7 @@ h1{
     left: 575px;
     letter-spacing: 20px;
     opacity: 0;
-    transition: opacity 0.3s;
+    z-index: 2;
 }
 .type:hover{
     opacity: 1;
