@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;  
+    
+}
+
+.collage{
+    position: relative;
+}
+.collage div{
+    position: absolute;
+    text-align: center;
+}
+.top{
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.standing{
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.walking{
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.background{
+    top: 0;
+    left: 0;
+}
+h1{
+    font-size: 50px;
+    color: #801D1D;
+}
+.type{
+    top: 120px;
+    left: 575px;
+    letter-spacing: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.type:hover{
+    opacity: 1;
+}
+
+
