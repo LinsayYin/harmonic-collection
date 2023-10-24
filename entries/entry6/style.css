@@ -6,6 +6,7 @@
     font-family: RammettoOne;
     src: url("RammettoOne-Regular.ttf");
 }
+
 body{
     background-color: black;
 }
@@ -20,11 +21,16 @@ h1{
 
 .square{
     text-align: center;
+    
 
 }
-.texture img{
+/* .texture img{
     width: 735px;
     height: 495px;
+} */
+.texture img {
+    max-width: 100%;
+    height: auto; 
 }
 
 .heading{
@@ -33,48 +39,71 @@ h1{
     justify-content: space-between;
     margin-left: 180px;
     margin-right: 180px;
+    padding: 10px;
 }
-.heading img{
+/* .heading img{
     position: absolute;
     margin-left: 570px;
     margin-top: -15px;
+} */
+.heading img {
+    max-width: 100%; 
+    height: auto; 
 }
 
 .square-button {
-    width: 229px;
-    height: 85px;
+    width: 50%; 
+    max-width: 300px; 
+    height: auto;
     border-radius: 50px;
     background: #E7E7E7;
     text-align: center;
     color: #D43182;
-    font-family: RammettoOne;
-    font-size: 40px;
-    font-style: normal;
+    font-size: 2rem; 
     font-weight: 400;
-    line-height: 80px;
-    margin: auto;
-
+    margin: 20px auto; 
+    padding: 10px; 
+    font-family: RammettoOne;
 }
-p{
+
+p {
     color: #D43182;
     text-align: center;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 1.5rem; 
     font-weight: 400;
-    line-height: normal;
+    margin: 20px auto; 
+    padding: 10px;
     font-family: sans-serif;
 }
-.top{
-    -moz-transform: rotate(-90deg);
-    -webkit-transform: rotate(90deg);
+
+.top,
+.bottom {
+    transform: rotate(90deg);
     position: absolute;
-    margin-top: -600px;
-    margin-left: 1200px;
 }
-.bottom{
-    -moz-transform: rotate(-90deg);
-    -webkit-transform: rotate(90deg);
-    position: absolute;
-    margin-top: -350px;
-    margin-left: 50px;
+
+.top {
+    margin-left: 0%;
+    left: 0;
+    margin-top: -22%;
+}
+
+.bottom {
+    margin-left: 100%;
+    right: 0;
+    margin-top: -35%;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+    }
+    .square-button {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 }
