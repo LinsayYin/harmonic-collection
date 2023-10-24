@@ -1,0 +1,80 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: RammettoOne;
+    src: url("RammettoOne-Regular.ttf");
+}
+body{
+    background-color: black;
+}
+h1{
+    font-family: RammettoOne;
+    color: #D43182;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.square{
+    text-align: center;
+
+}
+.texture img{
+    width: 735px;
+    height: 495px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.heading img{
+    position: absolute;
+    margin-left: 570px;
+    margin-top: -15px;
+}
+
+.square-button {
+    width: 229px;
+    height: 85px;
+    border-radius: 50px;
+    background: #E7E7E7;
+    text-align: center;
+    color: #D43182;
+    font-family: RammettoOne;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+    margin: auto;
+
+}
+p{
+    color: #D43182;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: sans-serif;
+}
+.top{
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 1200px;
+}
+.bottom{
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 50px;
+}
