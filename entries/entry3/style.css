@@ -18,11 +18,11 @@ h1{
     font-weight: 400;
     line-height: normal;
 }
-
 .square{
     text-align: center;
-    display: flex;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     top: 0;
     left: 50%;
@@ -124,7 +124,7 @@ h4{
     width: 900px;
     position: absolute;
     top: 850px;
-    left: 1850px;
+    left: 1800px;
 }
 .beans{
     width: 900px;
@@ -141,6 +141,6 @@ h4{
 .book{
     width: 700px;
     position: absolute;
-    top: 1250px;
-    left: 1900px;
+    top: 1200px;
+    left: 1870px;
 }
