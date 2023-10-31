@@ -18,10 +18,10 @@ h1{
     font-weight: 400;
     line-height: normal;
 }
+
 .square{
     text-align: center;
     display: flex;
-    
     width: 90%;
     position: absolute;
     top: 0;
@@ -143,4 +143,7 @@ h4{
     position: absolute;
     top: 1250px;
     left: 1900px;
+}
+h3{
+    color: aliceblue;
 }
