@@ -10,6 +10,16 @@
 body{
     background-color: black;
 }
+.background{
+    width: 90%;
+    background-image: url(/entries/entry3/background.png);
+    z-index: 1;
+}
+.headingcontainer{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
 h1{
     font-family: RammettoOne;
     color: #D43182;
@@ -21,13 +31,13 @@ h1{
 .square{
     text-align: center;
     width: 90%;
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    z-index: 0;
+    z-index: 0; */
 
 }
 .texture{
@@ -40,7 +50,9 @@ h1{
 
 .heading{
    display: flex;
-   position: relative;
+   /* position: relative; */
+    width: 60%;
+    margin: auto;
     z-index: 1;
 }
 .box{
@@ -143,4 +155,17 @@ h4{
     position: absolute;
     top: 1200px;
     left: 1870px;
+}
+#caption{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transform: translateX(25%);
+}
+#captioncontainer{
+    width: 100%;
 }
