@@ -12,14 +12,14 @@
 body{
     background-image: url(background.gif);
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    height: 100vh;
 }
 
 h1{
     /* font-family: RammettoOne; */
     color: white;
-    font-size: 220px;
+    font-size: 8vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -29,7 +29,7 @@ h1{
 }
 h2{
     font-family: Stanberry;
-    font-size: 70px;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -39,11 +39,11 @@ h2{
 }
 
 .image{
-    max-width: 10%;
+    max-width: 100%;
     padding: 0 10px;
 }
 img{
-    width: 450px;
+    max-width: 100%
 }
 .parent { 
     display: grid; 
@@ -52,28 +52,35 @@ img{
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
     }
-    .div1 { grid-area: 1 / 2 / 3 / 4; } 
-    .div2 { grid-area: 1 / 4 / 3 / 6; } 
-    .div3 { grid-area: 1 / 6 / 3 / 8; } 
-    .div4 { grid-area: 1 / 8 / 3 / 10; } 
-    .div5 { grid-area: 1 / 10 / 3 / 12; } 
-    .div6 { grid-area: 4 / 2 / 6 / 4; } 
-    .div7 { grid-area: 4 / 4 / 6 / 6; } 
-    .div8 { grid-area: 4 / 6 / 6 / 8; } 
-    .div9 { grid-area: 4 / 8 / 6 / 10; } 
-    .div10 { grid-area: 4 / 10 / 6 / 12; } 
+ .parent a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    .div1 { grid-area: 4 / 2 / 6 / 4; } 
+    .div2 { grid-area: 4 / 4 / 6 / 6; } 
+    .div3 { grid-area: 4 / 6 / 6 / 8; } 
+    .div4 { grid-area: 4 / 8 / 6 / 10; } 
+    .div5 { grid-area: 4 / 10 / 6 / 12; } 
+    .div6 { grid-area: 8 / 2 / 10 / 4; } 
+    .div7 { grid-area: 8 / 4 / 10 / 6; } 
+    .div8 { grid-area: 8 / 6 / 10 / 8; } 
+    .div9 { grid-area: 8 / 8 / 10 / 10; } 
+    .div10 { grid-area: 8 / 10 / 10 / 12; } 
 
     .text{
         display: flex;
         flex-direction: row;
-        font-size: 80px;
+        font-size: 3vw;
         flex-wrap: wrap;
         position: absolute;
         top: 20%;
-        left: 10%;
+        left: 5%;
     }
 
 .text div{
+    /* padding: 4%;
+    padding-top: 18%; */
     padding: 4%;
-    padding-top: 18%;
+    line-height: 6.2;
 }
