@@ -4,29 +4,41 @@
 }
 @font-face {
     font-family: RammettoOne;
-    src: url("RammettoOne-Regular.ttf");
+    src: url(RammettoOne-Regular.ttf);
+    font-family: Stanberry;
+    src: url(Stanberry.ttf);
 }
 
 body{
-    background-color: black;
+    background-image: url(background.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
 }
-.background{
-    width: 90%;
-    background-image: url(/entries/entry3/background.png);
-    z-index: 1;
-}
-.headingcontainer{
+
+/* .headingcontainer{
     width: 100%;
     z-index: 2;
     position: relative;
-}
+} */
 h1{
     font-family: RammettoOne;
-    color: #D43182;
-    font-size: 60px;
+    color: white;
+    font-size: 220px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    justify-content: center;
+
+}
+h2{
+    font-family: Stanberry;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }
 .square{
     text-align: center;
@@ -69,93 +81,24 @@ h1{
 img{
     width: 500px;
 }
-.parent {   
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    z-index: 1;
-    top: 0;    
+.parent { 
     display: grid; 
     grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: repeat(12, 1fr); 
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
-}
-.div1 { grid-area: 5 / 2 / 7 / 4; } 
-.div2 { grid-area: 4 / 5 / 6 / 7; } 
-.div3 { grid-area: 4 / 10 / 6 / 12; } 
-.div4 { grid-area: 6 / 8 / 8 / 10; } 
-.div5 { grid-area: 8 / 4 / 10 / 6; } 
-.div6 { grid-area: 9 / 2 / 11 / 4; } 
-.div7 { grid-area: 10 / 5 / 12 / 7; } 
-.div8 { grid-area: 10 / 10 / 12 / 12; } 
-.div9 { grid-area: 9 / 7 / 11 / 9; } 
+    }
+    .div1 { grid-area: 2 / 2 / 4 / 4; } 
+    .div2 { grid-area: 2 / 4 / 4 / 6; } 
+    .div3 { grid-area: 2 / 6 / 4 / 8; } 
+    .div4 { grid-area: 2 / 8 / 4 / 10; } 
+    .div5 { grid-area: 2 / 10 / 4 / 12; } 
+    .div6 { grid-area: 5 / 2 / 7 / 4; } 
+    .div7 { grid-area: 5 / 4 / 7 / 6; } 
+    .div8 { grid-area: 5 / 6 / 7 / 8; } 
+    .div9 { grid-area: 5 / 8 / 7 / 10; } 
+    .div10 { grid-area: 5 / 10 / 7 / 12; } 
 
-h2{
-    font-size: 50px;
-    font-family: RammettoOne;
-
-}
-h4{
-    font-size: 40px;
-    color: #7e7077;
-}
-.mantra{
-    width: 550px;
-    position: absolute;
-    top: 450px;
-    left: 280px;
-}
-.photo{
-    width: 550px;
-    position: absolute;
-    top: 850px;
-    left: 800px;
-}
-.poster{
-    width: 700px;
-    position: absolute;
-    top: 500px;
-    left: 1340px;
-}
-.xiangshu{
-    width: 550px;
-    position: absolute;
-    top: 1100px;
-    left: 200px;
-}
-.illu{
-    width: 550px;
-    position: absolute;
-    top: 1100px;
-    left: 1300px;
-}
-.collage{
-    width: 900px;
-    position: absolute;
-    top: 850px;
-    left: 1800px;
-}
-.beans{
-    width: 900px;
-    position: absolute;
-    top: 1650px;
-    left: 130px;
-}
-.fofo{
-    width: 700px;
-    position: absolute;
-    top: 1630px;
-    left: 1250px;
-}
-.book{
-    width: 700px;
-    position: absolute;
-    top: 1200px;
-    left: 1870px;
-}
 #caption{
     width: 50%;
     margin: auto;
