@@ -79,7 +79,7 @@ h2{
     padding: 0 10px;
 }
 img{
-    width: 500px;
+    width: 450px;
 }
 .parent { 
     display: grid; 
@@ -99,16 +99,3 @@ img{
     .div9 { grid-area: 5 / 8 / 7 / 10; } 
     .div10 { grid-area: 5 / 10 / 7 / 12; } 
 
-#caption{
-    width: 50%;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    transform: translateX(25%);
-}
-#captioncontainer{
-    width: 100%;
-}
