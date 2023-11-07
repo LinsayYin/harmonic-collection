@@ -16,13 +16,8 @@ body{
     height: 100%;
 }
 
-/* .headingcontainer{
-    width: 100%;
-    z-index: 2;
-    position: relative;
-} */
 h1{
-    font-family: RammettoOne;
+    /* font-family: RammettoOne; */
     color: white;
     font-size: 220px;
     font-style: normal;
@@ -34,46 +29,15 @@ h1{
 }
 h2{
     font-family: Stanberry;
-    font-size: 40px;
+    font-size: 70px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    display: flex;
+    justify-content: center;
 
 }
-.square{
-    text-align: center;
-    width: 90%;
-    /* margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 0; */
 
-}
-.texture{
-    width: 100%;
-}
-.texture img {
-    width: 100%;
-    height: auto; 
-}
-
-.heading{
-   display: flex;
-   /* position: relative; */
-    width: 60%;
-    margin: auto;
-    z-index: 1;
-}
-.box{
-    max-width: 100%;
-    height: 100%;
-    /* display: flex;
-    flex-wrap: wrap;
-    padding: auto; */
-}
 .image{
     max-width: 10%;
     padding: 0 10px;
@@ -88,14 +52,28 @@ img{
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
     }
-    .div1 { grid-area: 2 / 2 / 4 / 4; } 
-    .div2 { grid-area: 2 / 4 / 4 / 6; } 
-    .div3 { grid-area: 2 / 6 / 4 / 8; } 
-    .div4 { grid-area: 2 / 8 / 4 / 10; } 
-    .div5 { grid-area: 2 / 10 / 4 / 12; } 
-    .div6 { grid-area: 5 / 2 / 7 / 4; } 
-    .div7 { grid-area: 5 / 4 / 7 / 6; } 
-    .div8 { grid-area: 5 / 6 / 7 / 8; } 
-    .div9 { grid-area: 5 / 8 / 7 / 10; } 
-    .div10 { grid-area: 5 / 10 / 7 / 12; } 
+    .div1 { grid-area: 1 / 2 / 3 / 4; } 
+    .div2 { grid-area: 1 / 4 / 3 / 6; } 
+    .div3 { grid-area: 1 / 6 / 3 / 8; } 
+    .div4 { grid-area: 1 / 8 / 3 / 10; } 
+    .div5 { grid-area: 1 / 10 / 3 / 12; } 
+    .div6 { grid-area: 4 / 2 / 6 / 4; } 
+    .div7 { grid-area: 4 / 4 / 6 / 6; } 
+    .div8 { grid-area: 4 / 6 / 6 / 8; } 
+    .div9 { grid-area: 4 / 8 / 6 / 10; } 
+    .div10 { grid-area: 4 / 10 / 6 / 12; } 
 
+    .text{
+        display: flex;
+        flex-direction: row;
+        font-size: 80px;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+
+.text div{
+    padding: 4%;
+    padding-top: 18%;
+}
