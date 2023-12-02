@@ -12,5 +12,5 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    clip-path: circle(100px at 200px 200px);
+    clip-path: circle(100px at 600px 800px);
 }
