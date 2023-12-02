@@ -1,16 +1,88 @@
-body{
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
+*{
+    padding:0;
+    margin:0;
 }
-.light{
-    width: 100%;
-    height: 100%;
-    background-image: url(A.png);
+body{
+    background-image: url(background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    clip-path: circle(100px at 600px 800px);
+}
+ul{
+    position: absolute;
+    transition: 1s;
+    transform-style: preserve-3d;
+    perspective: 900px;
+    list-style: none;
+    width:240px;
+    height:340px;
+}
+li{
+    transform-origin: left;
+    position:absolute;
+}
+li img{
+    width:550px;
+    height:400px;
+    box-shadow: 1px 4px 5px rgba(0,0,0,0.2);
+}
+li:nth-of-type(1){
+    transform: rotateY(-28deg);
+    transition: 2.6s;
+}
+li:nth-of-type(2){
+    transform: rotateY(-24deg);
+    transition: 2.2s;
+}
+li:nth-of-type(3){
+    transform: rotateY(-20deg);
+    transition: 1.8s;
+}
+li:nth-of-type(4){
+    transform: rotateY(-16deg);
+    transition: 1.4s;
+}
+li:nth-of-type(5){
+    transform: rotateY(-12deg);
+    transition: 1s;
+}
+li:nth-of-type(6){
+    transform: rotateY(-8deg);
+    transition: 0.6s;
+}
+li:nth-of-type(7){
+    transform: rotateY(-4deg);
+    transition: 0.2s;
+}
+ul:hover li:nth-of-type(1){
+    transform:rotateY(-180deg);
+    transition: 1.4s;
+}
+ul:hover li:nth-of-type(2){
+    transform:rotateY(-180deg);
+    transition: 2s;
+}
+ul:hover li:nth-of-type(3){
+    transform:rotateY(-180deg);
+    transition: 2.6s;
+}
+ul:hover li:nth-of-type(4){
+    transform:rotateY(-180deg);
+    transition: 3.2s;
+}
+ul:hover li:nth-of-type(5){
+    transform:rotateY(-180deg);
+    transition: 3.8s;
+}
+ul:hover li:nth-of-type(6){
+    transform:rotateY(-180deg);
+    transition: 3.9s;
+}
+ul:hover{
+    transform: translateX(100px);
 }

@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>立体翻页书</title>
-    </head>
-    <link rel="stylesheet" href="style.css">
-    <body>
-          <ul>
-            <li><img src="k01.bmp" ></li>
-            <li><img src="k02.bmp" ></li>
-            <li><img src="k03.bmp" ></li>
-            <li><img src="k04.bmp" ></li>
-            <li><img src="k05.bmp" ></li>
-            <li><img src="k06.bmp" ></li>
-            <li><img src="k07.bmp" ></li>
-          </ul>
-    </body>
+<html lang="en">
+<head>
+    <title>Entry10</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="light"> </div>
+    <!-- learn from a youtube video -->
+    <script>
+        let light= document. querySelector('.light');
+        document.addEventListener('mousemove', event => {
+            const {clientX, clientY} =event;
+            const style = `circle(300px at ${clientX}px ${clientY}px)`;
+            light.style['clip-path'] = style;
+        })
+    </script>
+</body>
 </html>
