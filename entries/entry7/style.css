@@ -6,7 +6,7 @@
 
 body{
     cursor: url('custom-cursor.png'), auto;
-    background-image: url(background.png);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -72,9 +72,9 @@ section::before{
     content: '';
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 200px;
     width: 100%;
-    background: linear-gradient(to top,#3f3f3f,transparent);
+    background: linear-gradient(to top,#3f3f3f,transparent); 
     z-index: 1000;
     
 }
@@ -122,6 +122,7 @@ section #btn{
     font-size: 3.5em;
     color: #fff;
     margin-bottom: 10px;
+    width: 50%;
 }
 .sec p{
     color: #fff;
@@ -189,4 +190,25 @@ li:hover .content,
     0% {
         transform: scale(1.0) rotate(0deg);
     }
+}
+
+.A {
+    width: 60px;
+    height: 400px;
+    background-color: rgb(255, 255, 255); 
+    box-shadow: 1px 1px 2px rgba(149, 149, 149, 0.3);
+    border-radius: 20px;
+}
+  
+#drager2 {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    z-index: 10000;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    border-radius: 30%;
+    padding: 6px;
 }

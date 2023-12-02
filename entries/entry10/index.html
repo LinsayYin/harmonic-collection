@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Entry10</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="light"> </div>
+    <script>
+        let light= document. querySelector('.light');
+        document.addEventListener('mousemove', event => {
+            const {clientX, clientY} =event;
+            const style = `circle(300px at ${clientX}px ${clientY}px)`;
+            light.style['clip-path'] = style;
+        })
+    </script>
+</body>
+</html>
