@@ -4,7 +4,8 @@
 }
 
 body{
-    overflow-x: hidden;  
+    overflow-x: hidden; 
+    background-image: url(background.png); 
 }
 .collage div{
     position: absolute;
