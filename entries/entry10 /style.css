@@ -3,34 +3,27 @@
     padding: 0;
 }
 
-body{
-    overflow-x: hidden; 
+body{ 
     background-image: url(background.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
 }
-.collage div{
-    position: absolute;
-    text-align: center;
+.container{
+    display: flex;
+    justify-content: flex-start;
 }
-.top{
-    left: 0;
-    top: 0;
-    z-index: 2;
+.container .element {
+    width: 8.5em;
+    height: 8.5em;
+    margin: 5em;
 }
-.standing{
-    left: 0;
-    top: 0;
-    z-index: 1;
-}
-.walking{
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.background{
-    top: 0;
-    left: 0;
-}
-h1{
+
+
+
+/* h1{
     font-size: 50px;
     color: #801D1D;
 }
@@ -44,6 +37,6 @@ h1{
 }
 .type:hover{
     opacity: 1;
-}
+} */
 
 

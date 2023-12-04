@@ -2,22 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>collage</title>
+    <title>Entry10</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="Entry10">
-       
-        <div class="top"><img src="top.png" alt=""> </div>
-        <div class="standing"><img src="standing.png" alt=""></div>
-        <div class="walking"><img src="walking.png" alt=""></div>
-        <div class="background"><img src="background.png" alt=""></div>
-     <div class="type"><h1>是为了什么而流着血
+<body onload="move('element')">
+    <div class="container">
+        <div class="element" draggable="true"><img src="pic/1.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/2.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/3.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/4.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/5.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/6.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/7.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/8.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/9.png" alt=""></div>
+        <div class="element" draggable="true"><img src="pic/10.png" alt=""></div>
+       </div>
+     
+        
+     <!-- <div class="type"><h1>是为了什么而流着血
             <br>是为了谁而流眼泪
             <br>
             <br> 我躲在夜里取笑着黑
            <br> 因为没有人能杀死鬼</h1></div>
-        </div>
+        </div> -->
+
+        <script>
+            var chooseElement;
+    
+            const move = function(element) {
+                const elements = document.querySelectorAll(".element");
+    
+                elements.forEach(element => {
+                    element.addEventListener("mousedown", () => {
+                        element.style.position = "absolute";
+                        chooseElement = element;
+    
+                        document.onmousemove = (e) => {
+                            var x = e.pageX;
+                            var y = e.pageY;
+    
+                            chooseElement.style.left = x + "px";
+                            chooseElement.style.top = y + "px";
+    
+                            // console.log(chooseElement);
+                        };
+                    });
+                });
+            };
+        </script>
 </body>
 </html>
