@@ -218,5 +218,23 @@ li:hover .content,
     padding-top: 5.5em;
     padding-bottom: 3em;
     padding-left: 1.5em;
-    
 }
+.button a img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
+}
+
+
+@media only screen and (min-width: 1152px) {
+    .button a img {
+        max-width: 80vw; 
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    .button a img {
+        max-width: 428px;
+    }
+}
+
