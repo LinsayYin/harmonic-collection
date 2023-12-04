@@ -1,6 +1,3 @@
-/**
- * 画板
- */
 
  function autoSetCanvasSize(canvas) {
     function setCanvasSize() {
