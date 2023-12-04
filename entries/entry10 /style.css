@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Stanberry;
+    src: url(Stanberry.ttf);
+}
+@font-face{
+    font-family: RammettoOne;
+    src: url(RammettoOne-Regular.ttf);
+}
+
 body{ 
     background-image: url(background.png); 
     background-repeat: no-repeat;
@@ -18,18 +27,27 @@ body{
 .container .element {
     width: 8.5em;
     height: 8.5em;
-    margin: 5em;
+    margin: 4.5em;
 }
 
 
 
-/* h1{
-    font-size: 50px;
-    color: #801D1D;
+h1{
+    font-size: 5em;
+    color: #000000;
+    font-family: RammettoOne;
+}
+h2{
+    font-size: 3.8em;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    font-family: Stanberry;
+
 }
 .type{
-    top: 120px;
-    left: 575px;
+    display: flex;
+    justify-content: center;
     letter-spacing: 20px;
     opacity: 0;
     transition-duration: 3s;
@@ -37,6 +55,9 @@ body{
 }
 .type:hover{
     opacity: 1;
-} */
+}
+
+
+
 
 
