@@ -216,5 +216,6 @@ li:hover .content,
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+    padding-top: 0.5em;
 
 }
