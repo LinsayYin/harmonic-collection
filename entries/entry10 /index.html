@@ -43,13 +43,16 @@
                             var x = e.pageX;
                             var y = e.pageY;
     
-                            chooseElement.style.left = x + "px";
-                            chooseElement.style.top = y + "px";
+                            chooseElement.style.left = x -150 + "px";
+                            chooseElement.style.top = y -150 + "px";
     
                             // console.log(chooseElement);
                         };
                     });
                 });
+                document.onmouseup = function(e){
+                    chooseElement = null
+                }
             };
         </script>
 </body>
