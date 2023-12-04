@@ -114,15 +114,14 @@ section #btn{
 }
 .sec{
     position: relative;
-    padding: 100px;
+    padding: 30px;
     background-color: black;
     z-index: 200px;
 }
 .sec h2{
-    font-size: 3.5em;
+    font-size: 4em;
     color: #fff;
-    margin-bottom: 10px;
-    width: 50%;
+    width: 100%;
 }
 .sec p{
     color: #fff;
@@ -214,8 +213,9 @@ li:hover .content,
 }
 .button{
     display: flex;
-    justify-content: space-between;
-    background-color: #fff;
-    padding-top: 0.5em;
-
+    justify-content: space-around;
+    background-color: #D7D7D7;
+    padding-top: 5.5em;
+    padding-bottom: 3em;
+    
 }
