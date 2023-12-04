@@ -121,7 +121,7 @@ function initActionButtons(canvas, ctx) {
     })
     download.addEventListener('click', function () {
         var dataURL = canvas.toDataURL("image/png")
-        downloadImage(dataURL, '我的画-在线画板.png');
+        downloadImage(dataURL, 'My drawing download.png');
     })
 }
 
