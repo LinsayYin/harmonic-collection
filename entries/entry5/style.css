@@ -12,9 +12,54 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: url('custom-cursor.png'), auto;
 }
-ul{
+
+.custom-cursor {
+    cursor: url('custom-cursor.png'), auto;
+  }
+  header{
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header #logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration:none;
+    color: #fff;
+    padding: 6px 25px;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background-color: #fff;
+    color: black;
+}
+
+.book ul{
+    position: relative;
     transition: 1s;
     transform-style: preserve-3d;
     perspective: 900px;
@@ -22,67 +67,98 @@ ul{
     width:240px;
     height:340px;
 }
-li{
+.book li{
     transform-origin: left;
     position:absolute;
 }
-li img{
+.book li img{
     width:550px;
     height:400px;
     box-shadow: 1px 4px 5px rgba(0,0,0,0.2);
 }
-li:nth-of-type(1){
+.book li:nth-of-type(1){
     transform: rotateY(-28deg);
     transition: 2.6s;
 }
-li:nth-of-type(2){
+.book li:nth-of-type(2){
     transform: rotateY(-24deg);
     transition: 2.2s;
 }
-li:nth-of-type(3){
+.book li:nth-of-type(3){
     transform: rotateY(-20deg);
     transition: 1.8s;
 }
-li:nth-of-type(4){
+.book li:nth-of-type(4){
     transform: rotateY(-16deg);
     transition: 1.4s;
 }
-li:nth-of-type(5){
+.book li:nth-of-type(5){
     transform: rotateY(-12deg);
     transition: 1s;
 }
-li:nth-of-type(6){
+.book li:nth-of-type(6){
     transform: rotateY(-8deg);
     transition: 0.6s;
 }
-li:nth-of-type(7){
+.book li:nth-of-type(7){
     transform: rotateY(-4deg);
     transition: 0.2s;
 }
-ul:hover li:nth-of-type(1){
+.book ul:hover li:nth-of-type(1){
     transform:rotateY(-180deg);
     transition: 1.4s;
 }
-ul:hover li:nth-of-type(2){
+.book ul:hover li:nth-of-type(2){
     transform:rotateY(-180deg);
     transition: 2s;
 }
-ul:hover li:nth-of-type(3){
+.book ul:hover li:nth-of-type(3){
     transform:rotateY(-180deg);
     transition: 2.6s;
 }
-ul:hover li:nth-of-type(4){
+.book ul:hover li:nth-of-type(4){
     transform:rotateY(-180deg);
     transition: 3.2s;
 }
-ul:hover li:nth-of-type(5){
+.book ul:hover li:nth-of-type(5){
     transform:rotateY(-180deg);
     transition: 3.8s;
 }
-ul:hover li:nth-of-type(6){
+.book ul:hover li:nth-of-type(6){
     transform:rotateY(-180deg);
     transition: 3.9s;
 }
-ul:hover{
+.book ul:hover{
     transform: translateX(100px);
+}
+
+.button{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #D7D7D7;
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+    align-items: flex-end;
+    width: 100%;
+}
+.button a img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
+}
+
+
+@media only screen and (min-width: 1152px) {
+    .button a img {
+        max-width: 80vw; 
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    .button a img {
+        max-width: 428px;
+    }
 }

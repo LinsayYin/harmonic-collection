@@ -9,8 +9,53 @@
 body{
     background-color: #7B9F7C;
     color: #ECE9D2;
+    cursor: url('custom-cursor.png'), auto;
 
 }
+.custom-cursor {
+    cursor: url('custom-cursor.png'), auto;
+  }
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header #logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration:none;
+    color: #fff;
+    padding: 6px 25px;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active{
+    background-color: #fff;
+    color: black;
+}
+
+
 h1{
     font-size: 128px;
     font-family: RammettoOne;
@@ -57,4 +102,30 @@ p{
 }
 .b:hover img{ 
     transform: scale(1.5);
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D7D7D7;
+    padding-top: 3.5em;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
+}
+.button a img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
+}
+
+
+@media only screen and (min-width: 1152px) {
+    .button a img {
+        max-width: 80vw; 
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    .button a img {
+        max-width: 428px;
+    }
 }
