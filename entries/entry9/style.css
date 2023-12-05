@@ -6,12 +6,70 @@
 
 body{
     cursor: url('custom-cursor.png'), auto;
-    height: 100vh;
-    background-image: url(left.png);
+    width: 100%;
+    background-image: url(background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
+}
+.div1{
+  position: absolute;
+  width: 55vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 2.5em;
+  top: 15vh;
+  left: 10vw;
+}
+.div2{
+  position: absolute;
+  width: 20vw;
+  height: 20vh;
+  right: 10vw;
+  top: 10vh;
+}
+.div3{
+  position: absolute;
+  width: 20vw;
+  height: 20vh;
+  top: 38vh;
+  left: 48vw;
+}
+.div4{
+  position: absolute;
+  width: 20vw;
+  height: 20vh;
+  top: 50vh;
+  right: 10vw;
+  text-align: center;
+  font-size: 2.5em;
+}
+.div5{
+  position: absolute;
+  width: 20vw;
+  height: 20vh;
+  bottom: 10vh;
+  right: 10vw;
+}
+.div6{
+  position: absolute;
+  width: 20vw;
+  height: 10vh;
+  right: 32vw;
+  bottom: 15vh;
+  text-align: center;
+  font-size: 2.5em;
+}
+.div7{
+  position: absolute;
+  width: 35vw;
+  top: 30vh;
+  left: 10vw;
+}
+img{
+  width: 100%;
+  background-size:cover ;
 }
 
   header {
@@ -69,4 +127,34 @@ body{
       transform: translateY(20px);
     }
   }
- 
+
+  @media (max-width: 600px) {
+    .div1 {
+      width: 90vw;
+      font-size: 1.2em;
+      top: 5vh;
+      left: 5vw;
+    }
+  
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6,
+    .div7 {
+      width: 90vw;
+      margin: 2vh auto;
+    }
+  
+    .div4 {
+      font-size: 1.2em;
+    }
+  }
+h1{
+  font-size: 5em;
+  text-align: center;
+  margin-top: 0.5em;
+}
+h3{
+  font-size: 4em;
+}
