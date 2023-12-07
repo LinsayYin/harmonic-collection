@@ -1,12 +1,5 @@
-*{  
-    margin: 0;
-    box-sizing: border-box;
-    flex-grow: 0.15;
-}
-@font-face {
-    font-family: RammettoOne;
-    src: url("RammettoOne-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 
 body{
     background-color: black;
@@ -17,45 +10,6 @@ body{
     cursor: url('custom-cursor.png'), auto;
   }
 
-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-header #logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-header ul{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-header ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-header ul li a{
-    text-decoration:none;
-    color: #fff;
-    padding: 6px 25px;
-    border-radius: 20px;
-}
-header ul li a:hover,
-header ul li a.active{
-    background-color: #fff;
-    color: black;
-}
 
 h1{
     font-family: RammettoOne;
@@ -82,35 +36,6 @@ h1{
 .texture img {
     max-width: 100%;
     height: auto; 
-}
-.cn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.en{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.heading{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    padding: 10px;
-}
-/* .heading img{
-    position: absolute;
-    margin-left: 570px;
-    margin-top: -15px;
-} */
-.heading img {
-    max-width: 100%; 
-    height: auto; 
-
 }
 
 .square-button {
@@ -198,4 +123,84 @@ p {
     .button a img {
         max-width: 428px;
     }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
 }

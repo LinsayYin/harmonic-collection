@@ -19,7 +19,7 @@ body{
     cursor: url('custom-cursor.png'), auto;
   }
   header{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -142,7 +142,7 @@ header ul li a.active{
     background-color: #D7D7D7;
     padding-top: 1em;
     padding-bottom: 0.5em;
-    padding-left: 1.5em;
+    /* padding-left: 1.5em; */
     align-items: flex-end;
 
 }
@@ -153,14 +153,15 @@ header ul li a.active{
 }
 
 
+
 @media only screen and (min-width: 1152px) {
-    .button a img {
-        max-width: 80vw; 
-    }
+    /* .button a img {
+        /* max-width: 80vw;  */
+    } */
 }
 
 @media only screen and (min-width: 428px) {
     .button a img {
-        max-width: 428px;
+        /* max-width: 428px; */
     }
 }
