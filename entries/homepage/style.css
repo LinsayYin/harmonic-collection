@@ -236,16 +236,15 @@ li:hover .content,
 .div5 { grid-area: 2 / 2 / 3 / 3; }
 .div6 { grid-area: 2 / 3 / 3 / 4; }
 
-/* 在小屏幕上添加样式 */
 @media only screen and (max-width: 600px) {
     .parent {
-        grid-template-columns: repeat(1, 1fr); /* 在小屏幕上变为一列 */
-        margin: 20px; /* 调整边距 */
+        grid-template-columns: repeat(1, 1fr); 
+        margin: 20px; 
     }
 
     .div1, .div2, .div3, .div4, .div5, .div6 {
-        grid-area: auto; /* 取消grid-area属性，使其按列排列 */
-        margin-bottom: 20px; /* 调整元素之间的间距 */
+        grid-area: auto;
+        margin-bottom: 20px; 
     }
 }
 
@@ -282,4 +281,8 @@ h2{
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
+    .sec h2{
+        font-size: 2em;
+    }
+
 }
