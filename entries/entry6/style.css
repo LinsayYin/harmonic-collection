@@ -39,8 +39,8 @@ header ul li a{
 }
 header ul li a:hover,
 header ul li a.active{
-    background-color: #fff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 ul, ol {
