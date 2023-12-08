@@ -252,7 +252,7 @@ li:hover .content,
 h1{
     font-size: 5em;
     color: #fff;
-    padding-left: 2em;
+    padding-left: 1.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-family: sans-serif;
@@ -260,7 +260,7 @@ h1{
 p{
     font-size: 3.5em;
     color: #fff;
-    padding-left: 3em;
+    padding-left: 2.5em;
     padding-right: 3em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
