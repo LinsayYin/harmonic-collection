@@ -194,9 +194,8 @@ li:hover .content,
 .button{
     display: flex;
     justify-content: space-around;
-    padding-top: 3.5em;
-    padding-bottom: 2em;
-    padding-left: 1.5em;
+    padding-top: 5.5em;
+    padding-bottom: 5.5em;
 }
 .button a img {
     width: 100%; 
