@@ -89,6 +89,7 @@ h2{
 .image{
     max-width: 100%;
     padding: 0 10px;
+    
 }
 img{
     flex-grow: 1;
@@ -109,6 +110,7 @@ img{
         align-items: stretch;
         flex-direction: column;
         cursor: url('custom-cursor.png'), pointer;
+        
       }
     /* .div1 { grid-area: 4 / 2 / 6 / 4; } 
     .div2 { grid-area: 4 / 4 / 6 / 6; } 
@@ -149,7 +151,11 @@ img{
         top: 20%;
         left: 5%;
     }
-
+    .parent img {
+        flex-grow: 1;
+        border-radius: 50%; /* Add this line to make images circular */
+    }
+    
 .text div{
     /* padding: 4%;
     padding-top: 18%; */
