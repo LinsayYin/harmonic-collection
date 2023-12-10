@@ -15,15 +15,6 @@ body{
   }
 
 
-h1{
-    font-family: RammettoOne;
-    color: #D43182;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-}
 
 .heading h3{
   color: white;
@@ -71,6 +62,26 @@ h1{
   flex-direction: row;
   justify-content: space-between;
 }
+.container2 .texture img {
+  width: 80%; 
+  height: auto;
+  margin-left: 8vh;
+}
+@media only screen and (max-width: 600px) {
+  .container1 img{
+    width: 100%; 
+  }
+  .container2 img{
+    width: 100%; 
+  }
+
+ .square {
+    width: 100%; 
+    margin-right: 5em;
+  }
+}
+
+
 .introduce{
   display: flex;
   width: 100%;
@@ -82,6 +93,7 @@ h1{
   max-width: 70%;
   margin: 0 auto;
   margin-top: 5vh;
+  margin-bottom: 80px;
 }
 
 .display {
@@ -95,26 +107,57 @@ h1{
   max-width: 100%;
 }
 
-.description{
+.description {
   display: flex;
-  width: 100%;
-  position: relative;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.description h4 {
+  font-size: 1.5em; 
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5em; 
+  margin-left: -0.5em;
+
+  
+}
+.description p {
+  font-size: 1.5em; 
+  color: white;
+  margin-top: 0.5em; 
 }
 
-.display {
-  max-width: 30%;
+
+@media only screen and (max-width: 600px) {
+  .introduce {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .description {
+      margin: 10px; 
+  }
+
+  .description p {
+      font-size: 1.2em; 
+  }
 }
 
-.square{
-    text-align: center;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    
-
+.square-button {
+  width: 50%; 
+  max-width: 300px; 
+  height: auto;
+  border-radius: 20px;
+  background: #B8B5B5;
+  text-align: center;
+  font-size: 2rem; 
+  font-weight: 400;
+  margin: 20px auto; 
+  padding: 10px; 
 }
+
 .top{
   display: flex;
   flex-direction: column;
@@ -128,34 +171,20 @@ h1{
     height: auto; 
 }
 
-.square-button {
-    width: 50%; 
-    max-width: 300px; 
-    height: auto;
-    border-radius: 50px;
-    background: #E7E7E7;
-    text-align: center;
-    color: #D43182;
-    font-size: 2rem; 
-    font-weight: 400;
-    margin: 20px auto; 
-    padding: 10px; 
-    font-family: RammettoOne;
-}
+
 
 p {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.5rem; 
-    font-weight: 400;
-    margin: 20px auto; 
-    padding: 10px;
-    font-family: sans-serif;
+    color: #1A5790;
+    font-size: 2.3em; 
+}
+
+.content{
+  text-align: center;
+  width: 40%;
 }
 
 
-
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 900px) {
     .square-button {
         width: 80%;
         font-size: 1.5rem;

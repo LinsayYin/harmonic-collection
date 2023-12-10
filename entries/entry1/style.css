@@ -74,10 +74,12 @@ body{
         margin-bottom: 7vh; 
     }
     .left p {
-        margin-top: 50px;
+        margin-top: 1em;
+        font-size: 3em;
+        
     }
 
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 900px) {
         .square-button {
             width: 80%;
             font-size: 1.5rem;
@@ -87,6 +89,9 @@ body{
         }
         h1{
             font-size: 20px;
+        }
+        .left p {
+            font-size: 1em; 
         }
     }
     
@@ -126,6 +131,7 @@ body{
         max-width: 70%;
         margin: 0 auto;
         margin-top: 5vh;
+        margin-bottom: 80px;
       }
 
      .display {
@@ -139,17 +145,55 @@ body{
         max-width: 100%;
       }
 
+      .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description h4 {
+        font-size: 1.5em; 
+        text-align: center;
+        color: white;
+        margin-bottom: 0.5em; 
+        margin-left: -0.5em;
+
+        
+    }
+      .description p {
+        font-size: 1.5em; 
+        color: white;
+        margin-top: 0.5em; 
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+        .introduce {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .description {
+            margin: 10px; 
+        }
+    
+        .description p {
+            font-size: 1.2em; 
+        }
+    }
+    
       .square-button {
         width: 50%; 
         max-width: 300px; 
         height: auto;
-        border-radius: 50px;
-        background: #E7E7E7;
+        border-radius: 20px;
+        background: #B8B5B5;
         text-align: center;
-        color: #D43182;
         font-size: 2rem; 
         font-weight: 400;
         margin: 20px auto; 
         padding: 10px; 
-        font-family: RammettoOne;
     }
+
+    
