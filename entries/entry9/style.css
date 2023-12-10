@@ -32,7 +32,7 @@ max-width: 90%;
 margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1284px) {
     .heading {
       flex-direction: column;
       align-items: center;
@@ -48,17 +48,19 @@ margin: 0 auto;
 
   .container1 {
     margin-left: 7vw;
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
 }
 .container1 p{
   flex: 1;
   margin-right: 40vw;
+  font-size: 2em;
 }
 .container1 img{
   width: 20%;
   margin-left: 70vw;
+  margin-top: -8vw;
 }
 
 
@@ -70,7 +72,6 @@ margin: 0 auto;
     position: relative;
     flex-direction: row;
     justify-content: center;
-    margin-top: 10vh;
     margin-left: 7vw;
 }
 
@@ -90,16 +91,16 @@ margin: 0 auto;
     width: 50%;
     position: relative;
     flex-direction: column;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .top,
 .bottom {
-  margin-bottom: 35vh;
+  margin-bottom: 10vh;
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 10px; /* 调整间距 */
+    margin-top: 10px; 
     align-items: center;
 }
 .bottom {
@@ -108,25 +109,29 @@ margin: 0 auto;
 
 .top img,
 .bottom img {
-    width: 45%; /* 图片宽度占满容器 */
+    width: 45%; 
 }
 .bottom img{
   margin-left: 22vw;
 }
 .top p {
-    margin-top: 10px; /* 调整段落间距 */
+    margin-top: 10px; 
     margin-left: 25vw;
     width: 35%;
+    font-size: 2em;
 }
 
 .bottom p{
   margin-right: 25vw;
+  font-size: 2em;
 }
 
 
 header {
-  height: 100vh;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   overflow: hidden;
 }
 #shape {
@@ -138,6 +143,7 @@ img:not(#shape) {
   position: absolute;
   left: 0;
 }
+
 /* selecting the first image child of the header */
 header img:nth-child(1) {
   opacity: 0.4;
@@ -180,33 +186,3 @@ header img:nth-child(4) {
   }
 }
 
-@media (max-width: 600px) {
-  .div1 {
-    width: 90vw;
-    font-size: 1.2em;
-    top: 5vh;
-    left: 5vw;
-  }
-
-  .div2,
-  .div3,
-  .div4,
-  .div5,
-  .div6,
-  .div7 {
-    width: 90vw;
-    margin: 2vh auto;
-  }
-
-  .div4 {
-    font-size: 1.2em;
-  }
-}
-h1{
-font-size: 5vw;
-text-align: center;
-margin-top: 0.5em;
-}
-h3{
-font-size: 2vw;
-}

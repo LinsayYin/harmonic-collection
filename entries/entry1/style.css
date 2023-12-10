@@ -32,7 +32,7 @@ body{
     margin: 0 auto;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1284px) {
         .heading {
           flex-direction: column;
           align-items: center;
@@ -51,7 +51,8 @@ body{
         position: relative;
         flex-direction: row;
         justify-content: center;
-        margin-left: 5vh;
+        margin-right: 30px;
+        margin-left: 60px;
       }
 
       .left{
@@ -79,7 +80,7 @@ body{
         
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1284px) {
         .square-button {
             width: 80%;
             font-size: 1.5rem;
@@ -167,7 +168,7 @@ body{
     }
 
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1284px) {
         .introduce {
             flex-direction: column;
             align-items: center;
