@@ -40,7 +40,7 @@ body{
         }
       
         .heading h3 {
-          font-size: 2em; /* Adjust font size for small screens */
+          font-size: 2em; 
           margin-bottom: 0.5em;
         }
       }
@@ -92,7 +92,7 @@ body{
             font-size: 20px;
         }
         .left p {
-            font-size: 1em; 
+            font-size: 1.5em; 
         }
     }
     
@@ -109,15 +109,10 @@ body{
     }
     
     
-    @media only screen and (min-width: 1152px) {
+    @media only screen and (max-width: 1284px) {
       .button a img {
-          max-width: 80vw; 
-      }
-    }
-    
-    @media only screen and (min-width: 428px) {
-      .button a img {
-          max-width: 428px;
+          width: 90%;
+          padding-left: 40px;
       }
     }
 
