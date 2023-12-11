@@ -66,6 +66,7 @@ header ul li a.active{
 .container{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .container .element {
     width: 8.5em;
@@ -100,7 +101,56 @@ h2{
     opacity: 1;
 }
 
+.container2 img{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    
+ }
+ .container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+ }
 
+ @media only screen and (max-width: 768px) {
+    header {
+        padding: 30px 10px; /* 进一步调整为较小屏幕的 padding */
+    }
 
+    header #logo {
+        font-size: 1.2em; /* 进一步调整为较小屏幕的字体大小 */
+        letter-spacing: 0.5px; /* 进一步调整为较小屏幕的字母间距 */
+    }
 
+    header ul {
+        justify-content: center; /* 进一步调整为较小屏幕的对齐方式 */
+    }
 
+    header ul li {
+        margin-left: 5px; /* 进一步调整为较小屏幕的 margin */
+    }
+
+    header ul li a {
+        padding: 6px 10px; /* 进一步调整为较小屏幕的 padding */
+    }
+
+    .container {
+        justify-content: space-around; /* 在手机屏幕上调整为 space-around 对齐方式 */
+    }
+
+    .container .element {
+        width: 100%; /* 让 container 中的元素宽度占满一行 */
+    }
+
+    .container2 {
+        flex-direction: row; /* 调整为水平排列，使 container2 中的内容水平排列 */
+    }
+
+    .container2 img {
+        width: 100%; /* 让 container2 中的 img 宽度占满一行 */
+        margin-bottom: 1em; /* 进一步调整为手机屏幕上 img 之间的间距 */
+    }
+}
