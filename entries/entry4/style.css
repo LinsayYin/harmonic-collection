@@ -7,54 +7,50 @@
     src: url("RammettoOne-Regular.ttf");
 }
 body{
-    background-color: #7B9F7C;
-    color: #ECE9D2;
     cursor: url('custom-cursor.png'), auto;
+    width: 100%;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 .custom-cursor {
     cursor: url('custom-cursor.png'), auto;
   }
-  header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
+  
+.heading h3{
+    color: white;
+    margin: 0;
+    font-size: 3em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    }
+    .heading{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-header #logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-header ul{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-header ul li{
-    list-style: none;
-    margin-left: 20px;
-}
-header ul li a{
-    text-decoration:none;
-    color: #fff;
-    padding: 6px 25px;
-    border-radius: 20px;
-}
-header ul li a:hover,
-header ul li a.active{
-    background-color: #fff;
-    color: black;
-}
-
+    border-radius: 80px;
+    background: rgba(0, 0, 0, 0.16); 
+    padding-top: 0.8em; 
+    padding-bottom: 0.5em;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    }
+    
+    @media screen and (max-width: 1284px) {
+        .heading {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      
+        .heading h3 {
+          font-size: 2em; /* Adjust font size for small screens */
+          margin-bottom: 0.5em;
+        }
+      }
+    
 
 h1{
     font-size: 128px;
@@ -103,29 +99,113 @@ p{
 .b:hover img{ 
     transform: scale(1.5);
 }
-.button{
+@media only screen and (max-width: 128400px) {
+    .square-button {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.4rem;
+  
+    }
+    h1{
+        font-size: 20px;
+    }
+  }
+  
+  .button{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5.5em;
+  padding-bottom: 5.5em;
+  }
+  .button a img {
+  width: 100%; 
+  height: auto; 
+  max-width: 100%;
+  }
+  
+  
+  @media only screen and (max-width: 1284px) {
+  .button a img {
+      width: 90%;
+      padding-left: 5px;
+  }
+  }
+  
+  .square-button {
+    width: 50%; 
+    max-width: 300px; 
+    height: auto;
+    border-radius: 20px;
+    background: #B8B5B5;
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: 400;
+    margin: 20px auto; 
+    padding: 10px; 
+  }
+  
+  
+  .introduce{
     display: flex;
-    justify-content: space-around;
-    background-color: #D7D7D7;
-    padding-top: 3.5em;
-    padding-bottom: 2em;
-    padding-left: 1.5em;
-}
-.button a img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: rgba(38, 38, 38, 0.19);
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 80px;
+  }
+  
+  .display {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 30px; 
+  }
+  
+  .brush-image {
     max-width: 100%;
-}
-
-
-@media only screen and (min-width: 1152px) {
-    .button a img {
-        max-width: 80vw; 
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description h4 {
+    font-size: 1.5em; 
+    text-align: center;
+    color: white;
+    margin-bottom: 0.5em; 
+    margin-left: -0.5em;
+  
+    
+  }
+  .description p {
+    font-size: 1.5em; 
+    color: white;
+    margin-top: 0.5em; 
+  }
+  
+  
+  @media only screen and (max-width: 128400px) {
+    .introduce {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-}
-
-@media only screen and (min-width: 428px) {
-    .button a img {
-        max-width: 428px;
+  
+    .description {
+        margin: 10px; 
     }
-}
+  
+    .description p {
+        font-size: 1.2em; 
+    }
+  }
