@@ -56,10 +56,8 @@ body{
         position: relative;
         flex-direction: row;
         justify-content: center;
-        /* margin-right: 30px; */
-        /* margin-left: 60px; */
-        margin-left: auto;
-        margin-right: auto;
+        margin-right: 30px;
+        margin-left: 60px;
       }
 
       .left{
@@ -72,7 +70,7 @@ body{
       }
       .right{
         display: flex;
-        width: 50%;
+        width: 40%;
         position: relative;
         flex-direction: column;
         margin-top: 10vh;
@@ -80,8 +78,6 @@ body{
       .image {
         max-width: 80%; 
         margin-bottom: 7vh; 
-        margin-left: auto;
-        margin-right: auto;
     }
     .left p {
         margin-top: 1em;
