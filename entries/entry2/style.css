@@ -63,6 +63,8 @@ body{
    width: 400px;
    height: 600px;
 }
+
+/* Code for rotating image */
 @keyframes swiper {
    0% {
       transform: translateX(0);

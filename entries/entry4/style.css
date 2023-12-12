@@ -6,6 +6,12 @@
     font-family: RammettoOne;
     src: url("RammettoOne-Regular.ttf");
 }
+
+@font-face {
+  font-family: Stanberry;
+  src: url("Stanberry.ttf");
+}
+
 body{
     cursor: url('custom-cursor.png'), auto;
     width: 100%;
@@ -69,13 +75,17 @@ p{
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2vw;
 }
+
 
 .meme{
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    gap: 160px;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+    /* gap: 3vw; */
 }
 
 .a{
@@ -89,8 +99,8 @@ p{
 .mimi{
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    gap: 160px;
+    justify-content: space-around;
+    /* gap: 3vw; */
 }
 .b{
     width: 200px;

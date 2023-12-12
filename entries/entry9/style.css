@@ -56,22 +56,42 @@ margin-top: 30px;
   .container1 {
     width: 90%;
     margin-left: 3vw;
-    margin-top: 2vh;
+    margin-top: 7vh;
     display: flex;
-    align-items: center;
-    margin-bottom: -8vh;
+    /* align-items: center; */
+    /* margin-bottom: -8vh; */
 }
 .container1 p{
   flex: 1;
-  font-size: 2em;
-  margin-right: 10vw;
+  font-size: 2.5em;
+  margin-right: 17vw;
   margin-left: 3vw;
 }
 .container1 div img{
-  width: 100%;
+  width: 150%;
 }
 
-
+@media screen and (max-width: 1284px) {
+.right p{
+  margin-right: 0vw;
+}
+.top img{
+  margin-right: -6vw;
+}
+.bottom img {
+  margin-left: 2vw;
+}
+.bottom p{
+  margin-right: 2vw;
+}
+.left{
+  margin-right: 8vw;
+}
+.container2{
+  margin-top: -20vw;
+  margin-left: -5vw;
+}
+}
 
 
 .container2 {
@@ -91,7 +111,8 @@ margin-top: 30px;
     margin-left: 3vh;
 }
 .left img{
-  width: 100%;
+  width: 70%;
+  margin-left: 4.2vw;
 }
 
 .right {
@@ -116,18 +137,25 @@ margin-top: 30px;
 
 .top img,
 .bottom img {
-    width: 45%; 
+    width: 35%; 
 }
 .bottom img{
 margin-left: 2vw;
+margin-top: 10vw;
 }
+
+.top img{
+  margin-left: -4vw;
+  }
+
 .top p {
-    font-size: 3em;
-    margin-left: 1vh;
+    font-size: 2.5em;
+    margin-left: 5.5vh;
 }
 
 .bottom p{
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-left: -4vw;
 }
 
 

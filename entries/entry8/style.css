@@ -47,6 +47,7 @@
 
 body{
     background-image: url(background.gif);
+    background-color: #AEC7BF;
     background-repeat: no-repeat;
     background-size: cover;
     height: max-content;
@@ -66,8 +67,10 @@ h2{
     margin-left: 3vw;
     margin-right: 3vw;
     margin-top: 5vw;
+    margin-bottom: 5vw;
 
 }
+
 
 .image{
     max-width: 100%;
@@ -77,7 +80,7 @@ h2{
 img{
     flex-grow: 1;
 }
-
+/* get those grid code by using a grid generator website */
  .parent a {
         display: flex;
         width: 100%;
@@ -120,6 +123,7 @@ img{
     .parent img {
         flex-grow: 1;
         border-radius: 50%; /* Add this line to make images circular */
+         width: 100%;
     }
     
 .text div{
@@ -129,17 +133,14 @@ img{
     line-height: 6.2;
 }
 
-@media only screen and (max-width: 128400px) {
+@media only screen and (max-width: 1284px) {
     .square-button {
         width: 80%;
         font-size: 1.5rem;
     }
-    p {
-        font-size: 1.4rem;
-  
-    }
-    h1{
-        font-size: 20px;
+    .headingcontainer{
+      margin-left: 2vw;
+      margin-right: 2vw;
     }
   }
   

@@ -31,7 +31,7 @@ li>a {
 }
 
 li:hover {
-    background-color: #4f4f4f;
+    background-color: #000000;
 }
 
 
@@ -71,8 +71,8 @@ header ul li a{
 }
 header ul li a:hover,
 header ul li a.active{
-    background-color: #fff;
-    color: black;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 }
 
 .icon {
@@ -84,7 +84,7 @@ header ul li a.active{
 
 #canvas {
     display: block;
-    /* 解决浏览器下拉刷新无法画问题 */
+    /* Solve browser drop-down refresh can not draw problem */
     position: fixed;
     top: 0;
     left: 0;
@@ -92,8 +92,8 @@ header ul li a.active{
 
 #actions {
     position: fixed;
-    top: 80px;
-    left: 0px;
+    top: 120px;
+    left: 40px;
     padding: 16px;
 }
 #actions .icon {
@@ -107,11 +107,11 @@ header ul li a.active{
     fill: purple;
     transform: scale(1.2)
 }
-
+/* change the color of the brush */
 .colors {
     position: fixed;
-    top: 160px;
-    left: 23px;
+    top: 220px;
+    left: 60px;
 }
 .colors > .color {
     width: 20px;
@@ -125,11 +125,11 @@ header ul li a.active{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
     transform: scale(1.2)
 }
-
+/* change the size of the brush */
 .sizes {
     position: fixed;
-    right: 20px;
-    top: 10px;
+    right: 60px;
+    top: 160px;
 }
 .sizes > .size {
     height: 0;

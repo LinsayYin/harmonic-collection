@@ -59,7 +59,7 @@ header ul li a{
 header ul li a:hover,
 header ul li a.active{
     background-color: #fff;
-    color: #2b1065;
+    color: #000000;
 }
 
 .book ul{

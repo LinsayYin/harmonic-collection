@@ -80,14 +80,20 @@ header ul li a.active{
 
 
 h1{
-    font-size: 5em;
+    margin-top: 13vw;
+    margin-bottom: 5vw;
+    margin-left: 2vw;
+    font-size: 3em;
     color: #000000;
     font-family: RammettoOne;
+    text-align: center;
     /* margin-bottom: 2vw;
     margin-left: -6vw; */
 }
 h2{
-    font-size: 3.8em;
+    font-size: 2em;
+    margin-left: 5vw;
+    margin-bottom: 3vw;
     color: #000000;
     display: flex;
     justify-content: center;

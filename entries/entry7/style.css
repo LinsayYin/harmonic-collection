@@ -16,7 +16,7 @@ body{
 }
 header{
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 100%;
     padding: 30px 100px;
@@ -24,6 +24,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-sizing: border-box;
 }
 header #logo{
     color: #fff;
@@ -35,7 +36,7 @@ header #logo{
 }
 header ul{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 header ul li{
@@ -51,5 +52,5 @@ header ul li a{
 header ul li a:hover,
 header ul li a.active{
     background-color: #fff;
-    color: black;
+    color: #000000;
 }

@@ -1,3 +1,4 @@
+// learn from youtube video 
 
  function autoSetCanvasSize(canvas) {
     function setCanvasSize() {
@@ -7,7 +8,7 @@
         canvas.height = pageHeight
     }
     setCanvasSize()
-    // 改变窗口大小重新设置
+    // Change the window size to reset
     window.onresize = function () {
         setCanvasSize()
     }
@@ -23,12 +24,12 @@ function drawLine(ctx, x1, y1, x2, y2) {
 }
 
 function registerUserEvents(canvas, ctx) {
-    // 鼠标操作
+    // mouse action
     var enableDrag = false
     var lastPoint = { x: undefined, y: undefined }
-    // 特性检测
+    // evaluation
     if (document.body.ontouchstart === undefined) {
-        // 非触屏设备
+        // for non-touchable equipment
         canvas.addEventListener('mousedown', function (e) {
             enableDrag = true
             var x = e.offsetX
@@ -36,7 +37,7 @@ function registerUserEvents(canvas, ctx) {
             if (window.eraserEnabled) {
                 ctx.clearRect(x - 5, y - 5, 10, 10)
             } else {
-                // 在按下时就要更新 lastPoint, 不然下一次点击会连接到上一条线的 lastPoint
+                // Update lastPoint when you press it, or the next click will connect to lastPoint from the previous line
                 lastPoint = { x: x, y: y }
             }
         })
@@ -57,7 +58,7 @@ function registerUserEvents(canvas, ctx) {
             enableDrag = false
         })        
     } else {
-        // 触屏设备
+        // touchable device
         canvas.addEventListener('touchstart', function (e) {
             enableDrag = true
             var x = e.touches[0].clientX
@@ -65,7 +66,7 @@ function registerUserEvents(canvas, ctx) {
             if (window.eraserEnabled) {
                 ctx.clearRect(x - 5, y - 5, 10, 10)
             } else {
-                // 在按下时就要更新 lastPoint, 不然下一次点击会连接到上一条线的 lastPoint
+                // Update lastPoint when you press it, or the next click will connect to lastPoint from the previous line
                 lastPoint = { x: x, y: y }
             }            
         })
@@ -167,7 +168,7 @@ function initCanvasBackground(canvas, ctx) {
 }
 
 /** 
- * 解决浏览器下拉刷新无法画问题
+ * Solve browser drop-down refresh can not draw problem
  * https://www.jianshu.com/p/04092ebe3b76
  * */
 function disableScroll() {
