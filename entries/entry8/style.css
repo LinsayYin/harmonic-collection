@@ -85,6 +85,7 @@ img{
         align-items: stretch;
         flex-direction: column;
         cursor: url('custom-cursor.png'), pointer;
+  
         
       }
     
@@ -94,6 +95,8 @@ img{
         grid-template-rows: repeat(2, 1fr); 
         grid-column-gap: 15px;
         grid-row-gap: 15px; 
+        max-width: 100%;
+        width: 100%;
         }
         .div1 { grid-area: 1 / 1 / 2 / 2; }
         .div2 { grid-area: 1 / 2 / 2 / 3; }

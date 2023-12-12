@@ -3,6 +3,7 @@
     margin:0;
 }
 body{
+    background-color: black;
     background-image: url(background.png);
     display: flex;
     justify-content: center;
@@ -30,6 +31,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-sizing: border-box;
 }
 header #logo{
     color: #fff;

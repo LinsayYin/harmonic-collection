@@ -28,6 +28,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
@@ -35,7 +36,7 @@ header{
     z-index: 100;
 }
 header #logo{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-size: 2em;
     font-weight: 700;
@@ -53,7 +54,7 @@ header ul li{
 }
 header ul li a{
     text-decoration:none;
-    color: #fff;
+    color: #000000;
     padding: 6px 25px;
     border-radius: 20px;
 }
@@ -67,6 +68,8 @@ header ul li a.active{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
 }
 .container .element {
     width: 8.5em;
@@ -80,6 +83,8 @@ h1{
     font-size: 5em;
     color: #000000;
     font-family: RammettoOne;
+    /* margin-bottom: 2vw;
+    margin-left: -6vw; */
 }
 h2{
     font-size: 3.8em;
@@ -87,6 +92,7 @@ h2{
     display: flex;
     justify-content: center;
     font-family: Stanberry;
+    /* margin-left: 15vw; */
 
 }
 .type{
@@ -94,63 +100,82 @@ h2{
     justify-content: center;
     letter-spacing: 20px;
     opacity: 0;
-    transition-duration: 3s;
+    transition-duration: 0.5s;
     z-index: 2;
+    /* margin-top: 7vh;
+    margin-left: 20vw; */
+
 }
 .type:hover{
     opacity: 1;
 }
 
 .container2 img{
-    width: 400px;
+    width: 100%;
     display: flex;
     align-items: center;
     
  }
+
  .container2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5vw;
-    margin-bottom: 3vw;
+    width: 100%;
+    align-items: stretch;
+    /* margin-top: 5vw;
+    margin-bottom: 3vw; */
  }
+.right{
+    /* margin-right: 8vw; */
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.left{
+    /* margin-right: 8vw;
+    margin-top: 1vw; */
+    flex-grow: 1;
+    padding: 20px;
+}
 
  @media only screen and (max-width: 768px) {
     header {
-        padding: 30px 10px; /* 进一步调整为较小屏幕的 padding */
+        padding: 30px 10px;
     }
 
     header #logo {
-        font-size: 1.2em; /* 进一步调整为较小屏幕的字体大小 */
-        letter-spacing: 0.5px; /* 进一步调整为较小屏幕的字母间距 */
+        font-size: 1.2em;
+        letter-spacing: 0.5px;
     }
 
     header ul {
-        justify-content: center; /* 进一步调整为较小屏幕的对齐方式 */
+        justify-content: center;
     }
 
     header ul li {
-        margin-left: 5px; /* 进一步调整为较小屏幕的 margin */
+        margin-left: 5px; 
     }
 
     header ul li a {
-        padding: 6px 10px; /* 进一步调整为较小屏幕的 padding */
+        padding: 6px 10px; 
     }
 
     .container {
-        justify-content: space-around; /* 在手机屏幕上调整为 space-around 对齐方式 */
+        justify-content: space-around; 
     }
 
     .container .element {
-        width: 100%; /* 让 container 中的元素宽度占满一行 */
+        width: 100%; 
     }
 
     .container2 {
-        flex-direction: row; /* 调整为水平排列，使 container2 中的内容水平排列 */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .container2 img {
-        width: 100%; /* 让 container2 中的 img 宽度占满一行 */
-        margin-bottom: 1em; /* 进一步调整为手机屏幕上 img 之间的间距 */
+        width: 100%; 
+        margin-bottom: 1em;
     }
 }
