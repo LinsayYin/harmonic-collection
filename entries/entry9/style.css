@@ -20,6 +20,10 @@ body{
 
 }
 
+.custom-cursor {
+  cursor: url('custom-cursor.png'), auto;
+}
+
 .heading h3{
 color: white;
 margin: 0;
@@ -37,6 +41,7 @@ padding-bottom: 0.5em;
 max-width: 90%;
 margin: 0 auto;
 margin-top: 30px;
+
 }
 
 @media screen and (max-width: 1284px) {
@@ -160,7 +165,7 @@ margin-top: 10vw;
 
 
 header {
-  height: 100%;
+  height: 90%;
   width: 100%;
   position: fixed;
   bottom: 0;
